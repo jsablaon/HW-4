@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Ratings</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="movie.js"></script>
+</head>
+
+<body>
+
+  <form name="mainFrom" onsubmit="return false">
+
+    <h1>Movie Ratings</h1>
+
+    <fieldset id="custInfo">
+      <legend>Please Rate Your Movies</legend>
+
+      <label for="movieName"> Movie Name:</label>
+      <input name="movieName" id="movieName" placeholder="Movie" type="text" />
+
+      <label for="movieRating"> Rating [1(Bad)-5(Excellent)]:</label>
+      <input name="movieRating" id="movieRating" placeholder="Rating (1-5)" type="number" min=1 max=5 />
+
+      <input type="submit" value="Add Movies" onclick="AddMovie()">
+      <input type="submit" value="Show Movies" onclick="ShowMovies()">
+
+    </fieldset>
+
+    <fieldset id="output">
+      
+      <legend>Movies and Ratings</legend>
+      <h3>Movies</h3>
+      <div id="outputlist"></div>
+
+    </fieldset>
+
+  </form>
+
+</body>
+
+</html>
